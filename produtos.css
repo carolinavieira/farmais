@@ -2,7 +2,9 @@ header{
 
 }
 .imagem-principal{
-    padding: 25px;
+    font-size: 55px;
+    background: blue;
+    padding: 60px;
 }
 body{
 
@@ -14,7 +16,8 @@ body{
 }
 nav{
     position:absolute;
-    top:110px;
+    top:200px;
+    height: 100px;
     right:0;
 }
 nav li{
@@ -23,10 +26,11 @@ nav li{
 }
 nav a{
     text-transform: uppercase;
-    color: #000000;
+    color: white;
     font-weight: bold;
-    font-size:22px;
+    font-size:15px;
     text-decoration: none;
+
 
 }
 
@@ -66,4 +70,10 @@ nav a:hover{
     font-size:22px;
     font-weight: bold;
     margin-top: 10px;
+}
+.botao{
+    text-align: center;
+    width: 15px;
+    padding: 5px 5px;
+
 }
