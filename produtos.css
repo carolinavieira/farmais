@@ -1,24 +1,25 @@
-header{
-
-}
-.imagem-principal{
-    font-size: 55px;
-    background: blue;
-    padding: 60px;
-}
 body{
 
 }
+.menu{
+    float: left;
+    width: 50%;  
+}
+#texto {
+    text-align: right;
+    font-size: 50px;
+}
+
 #editando-imagem{
     width: 150px;
     height:150px;
     margin: auto;
 }
 nav{
-    position:absolute;
-    top:200px;
-    height: 100px;
-    right:0;
+    width:98%;
+    height: 200px;
+    background: #120a8f;
+    padding: 15px;
 }
 nav li{
     display:inline;
@@ -31,12 +32,12 @@ nav a{
     font-size:15px;
     text-decoration: none;
 
-
 }
 
 nav a:hover{
     color:red;
     text-decoration: underline;
+    
 }
 .produtos li {
     display:inline-block;
@@ -52,18 +53,16 @@ nav a:hover{
 
 .produtos li:hover {
     border-color: red;
-    font-size: 40px;
+  
 }
 .produtos li:active{
     border-color: #088C19;
 
 }
 .produtos li:hover h2{
-    font-size: 34px;
+ 
 }
-
-.descricao-medicamento{
-    font-size:18px;
+.medicamento-descrição{
 }
 
 .preco-medicamento{
