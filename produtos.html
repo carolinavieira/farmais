@@ -8,10 +8,25 @@
 
         <!-- <link rel="stylesheet" href="resert.css"> -->
         <link rel="stylesheet" href="produtos.css">
+
+        <script>
+            window.onload = aposTodoHtmlSerCarregado;
+
+            function aposTodoHtmlSerCarregado() {
+                alert('teste');
+
+                document.getElementById('botao-1').onclick = function(){ 
+                    document.getElementById('txt-quantidade1').value = parseInt(document.getElementById('txt-quantidade1').value) - 1 
+                }
+
+                document.getElementById('botao-unico1').onclick = function(){ 
+                    document.getElementById('txt-quantidade1').value = parseInt(document.getElementById('txt-quantidade1').value) + 1 
+                }
+            }
+        </script>       
     </head>
 
     <body>
-        
         <nav>
             <div class="menu">
                 <img src="farmais.png">
@@ -27,16 +42,15 @@
         </nav>
 
         <ul class="produtos">
-
             <li>
                 <h2>PSYLLIUM 500 MG</h2>
                 <img src="psyllium-500mg.jpg" id="editando-imagem">
                 <p class="medicamento-descricao"> Regulador intestinal com 60 cápsulas.</p>
                 <p><a href="descricao-produtos.html">Descrição Produtos</a></p>
                 <p class="preco-medicamento">R$28,74</p>
-                <button>-</button>
-                <label><input type="text" value="0" class="botao"></label>
-                <button>+</button>
+                <button id="botao-0" onclick="document.getElementById('txt-quantidade').value=parseInt(document.getElementById('txt-quantidade').value)-1">- </button>
+                <input type="text" value="0" class="botao" id= "txt-quantidade">
+                <button id= "botao-unico"  onclick="document.getElementById('txt-quantidade').value=parseInt(document.getElementById('txt-quantidade').value)+1">+</button>
                 
             </li>
 
@@ -46,9 +60,9 @@
                 <p class="medicamento-descricao">Suplemento Imunidade</p>
                 <p><a href="descricao-produtos.html">Descrição Produtos</a></p>
                 <p class="preco-medicamento">R$95,99</p>
-                <button>-</button>
-                <label><input type="text" value="0"  class="botao"></label>
-                <button>+</button>
+                <button id="botao-1">-</button>
+                <input type="text" value="0"  class="botao" id= "txt-quantidade1">
+                <button id= "botao-unico1">+</button>
             </li>
         
             <li>
@@ -57,13 +71,13 @@
                 <p class="medicamento-descricao">Para saúde digestiva</p>
                 <p><a href="descricao-produtos.html">Descrição Produtos</a></p>
                 <p class="preco-medicamento"> R$109,90</p>
-                <button>-</button>
-                <label><input type="text" value="0"  class="botao"></label>
-                <button>+</button>
+                <button id="botao-2">-</button>
+                <input type="text" value="0"  class="botao" id= "txt-quantidade2">
+                <button id= "botao-unico2">+</button>
             </li>
-
         </ul>
 
+        <script src="js/produtos.js"></script>
     </body>
 
 </html>
